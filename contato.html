@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+            <div class="caixa">
+                <h1><img class="logo" src="logo.png" alt="Logo da barbearia alura"></h1>
+                <nav>
+                        <ul>
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                </nav>  
+            </div>
+        
+    </header>
+
+    <main>
+        <div class="form">
+        <form  action="">
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input class="input-padrao" type="text" id="nomesobrenome" required >
+
+            <label for="email">Email</label>
+            <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+           
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="10" id="mensagem" required></textarea>
+            <!-- Seleciona o número de colunas e Rows -->
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email">Email <input type="radio" name="contato" value="email" id="radio-email"></label>
+               
+                <label for="radio-telefone">Telefone <input type="radio"  name="contato" value="telefone" id="radio-telefone"></label>
+               
+                <label for="radio-whatsapp">WhatsApp<input type="radio"  name="contato" value="whatsapp" id="radio-whatsapp" checked></label>
+                
+                <!-- Para que os inputs não sejam selecionados ao mesmo tempo, deve-se associar a todos eles o mesmo valor de name -->
+                
+            </fieldset>
+            <!-- Mobile input types -->
+            <fieldset id="select-fieldset">
+                <legend>Qual o horário prefere ser atendido? </legend>
+                <div id="select-div">
+                    <select  name="" id="select">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <label><input class="checkbox" type="checkbox" checked>Gostaria de receber nossas novidades por Email?</label>
+            
+            <div class="botao-submit"><input type="submit" value="Enviar formulário" class="enviar"></div>
+        </form>
+    </div>    
+    <div class="table"> 
+        <table >
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+        
+    </main>
+
+    <footer>
+        <img src="logo-branco.png" alt="Logo Alura em Branco">
+        <p class="copyright"> 	
+            &#9786; Copyright Barbearia Alura - 2019</p>
+        <!-- Codigos unicodes unicode-table -->
+    </footer>
+</body>
+</html>
+
